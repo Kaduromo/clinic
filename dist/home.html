@@ -164,12 +164,7 @@
 								<img src="img/icons/icons-play.svg" alt="Play" />
 							</span>
 						</button>
-						<video class="preview__video" src="files/video.mp4" poster="files/video-preview.jpg"></video>
-						<!-- <iframe
-                class="preview__video"
-                width="560"
-                src="https://www.youtube.com/embed/407JVKJUV6w"
-              ></iframe> -->
+						<iframe class="preview__video" width="560" src="https://www.youtube.com/embed/407JVKJUV6w"></iframe>
 					</div>
 					<div class="preview__desc">
 						<h2 class="preview__title title">
@@ -269,7 +264,7 @@
 							<a href="#" class="directions__learnMore directions__learnMore_red">Узнать подробнее</a>
 						</article>
 					</div>
-					<button class="directions__showMore">Показать еще</button>
+					<button class="btn-more">Показать еще</button>
 				</div>
 			</section>
 
@@ -279,59 +274,61 @@
 						Воспользуйтесь одним из наших предложений!
 					</h2>
 					<div class="сourses__cards cards-course">
-						<article class="cards-course__card">
-							<div class="cards-course__image">
-								<p class="cards-course__discount">Скидка <span>44%</span></p>
-								<img src="img/courses.jpg" alt="Картинка курса" />
-							</div>
-							<div class="cards-course__body">
-								<h3 class="cards-course__subtitle">Консультация невролога +ЭЭГ</h3>
-								<div class="cards-course__prices">
-									<p class="cards-course__oldPrice">10 600 р.</p>
-									<p class="cards-course__price">5 990 р.</p>
+						<div class="cards-course__content">
+							<article class="cards-course__card">
+								<div class="cards-course__image">
+									<p class="cards-course__discount">Скидка <span>44%</span></p>
+									<img src="img/courses.jpg" alt="Картинка курса" />
 								</div>
-								<div class="cards-course__btns">
-									<a href="#" class="cards-course__more">Подробнее</a>
-									<button class="cards-course__btn">ЗАПИСАТЬСЯ</button>
+								<div class="cards-course__body">
+									<h3 class="cards-course__subtitle">Консультация невролога +ЭЭГ</h3>
+									<div class="cards-course__prices">
+										<p class="cards-course__oldPrice">10 600 р.</p>
+										<p class="cards-course__price">5 990 р.</p>
+									</div>
+									<div class="cards-course__btns">
+										<a href="#" class="cards-course__more">Подробнее</a>
+										<button class="cards-course__btn">ЗАПИСАТЬСЯ</button>
+									</div>
 								</div>
-							</div>
-						</article>
+							</article>
 
-						<article class="cards-course__card">
-							<div class="cards-course__image">
-								<p class="cards-course__discount">Скидка <span>44%</span></p>
-								<img src="img/courses.jpg" alt="Картинка курса" />
-							</div>
-							<div class="cards-course__body">
-								<h3 class="cards-course__subtitle">Консультация невролога +ЭЭГ</h3>
-								<div class="cards-course__prices">
-									<p class="cards-course__oldPrice">10 600 р.</p>
-									<p class="cards-course__price">5 990 р.</p>
+							<article class="cards-course__card">
+								<div class="cards-course__image">
+									<p class="cards-course__discount">Скидка <span>44%</span></p>
+									<img src="img/courses.jpg" alt="Картинка курса" />
 								</div>
-								<div class="cards-course__btns">
-									<a href="#" class="cards-course__more">Подробнее</a>
-									<button class="cards-course__btn">ЗАПИСАТЬСЯ</button>
+								<div class="cards-course__body">
+									<h3 class="cards-course__subtitle">Консультация невролога +ЭЭГ</h3>
+									<div class="cards-course__prices">
+										<p class="cards-course__oldPrice">10 600 р.</p>
+										<p class="cards-course__price">5 990 р.</p>
+									</div>
+									<div class="cards-course__btns">
+										<a href="#" class="cards-course__more">Подробнее</a>
+										<button class="cards-course__btn">ЗАПИСАТЬСЯ</button>
+									</div>
 								</div>
-							</div>
-						</article>
+							</article>
 
-						<article class="cards-course__card">
-							<div class="cards-course__image">
-								<p class="cards-course__discount">Скидка <span>44%</span></p>
-								<img src="img/courses.jpg" alt="Картинка курса" />
-							</div>
-							<div class="cards-course__body">
-								<h3 class="cards-course__subtitle">Консультация невролога +ЭЭГ</h3>
-								<div class="cards-course__prices">
-									<p class="cards-course__oldPrice">10 600 р.</p>
-									<p class="cards-course__price">5 990 р.</p>
+							<article class="cards-course__card">
+								<div class="cards-course__image">
+									<p class="cards-course__discount">Скидка <span>44%</span></p>
+									<img src="img/courses.jpg" alt="Картинка курса" />
 								</div>
-								<div class="cards-course__btns">
-									<a href="#" class="cards-course__more">Подробнее</a>
-									<button class="cards-course__btn">ЗАПИСАТЬСЯ</button>
+								<div class="cards-course__body">
+									<h3 class="cards-course__subtitle">Консультация невролога +ЭЭГ</h3>
+									<div class="cards-course__prices">
+										<p class="cards-course__oldPrice">10 600 р.</p>
+										<p class="cards-course__price">5 990 р.</p>
+									</div>
+									<div class="cards-course__btns">
+										<a href="#" class="cards-course__more">Подробнее</a>
+										<button class="cards-course__btn">ЗАПИСАТЬСЯ</button>
+									</div>
 								</div>
-							</div>
-						</article>
+							</article>
+						</div>
 
 					</div>
 				</div>
@@ -452,10 +449,12 @@
 				</div>
 			</section>
 
-			<section class="specialists">
+			<section class="specialists specialists__decor">
 				<div class="specialists__container">
-					<h2 class="specialists__title">Ведущие специалисты клиники</h2>
-					<p class="specialists__text">
+					<h2 class="specialists__title specialists__title_center title">
+						Ведущие специалисты клиники
+					</h2>
+					<p class="specialists__text specialists__text_center">
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 						nonumy eirmod tempor Lorem ipsum dolor sit amet consetetur
 						sadipscing elitr
@@ -558,7 +557,7 @@
 								</a>
 							</article>
 						</div>
-						<button class="reviews__more">Показать еще</button>
+						<button class="reviews__more btn-more">Показать еще</button>
 					</div>
 				</div>
 			</section>
