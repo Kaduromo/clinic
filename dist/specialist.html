@@ -41,7 +41,7 @@
 							<img src="img/icons/icons-social-yt.svg" alt="Ютюб" />
 						</a>
 					</div>
-					<button data-da=".header__top,767.98" class="header__btn btn-bg">
+					<button data-popup="#popapus" data-da=".header__top,767.98" class="header__btn btn-bg">
 						ЗАПИСАТЬСЯ НА ПРИЕМ
 					</button>
 					<div data-da=".header__bottom,991.98" class="header__phone">
@@ -549,6 +549,41 @@
 			</section>
 
 
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__body">
+						<div class="contacts__textual">
+							<h2 class="contacts__title">Контакты</h2>
+							<div class="contacts__info">
+								<p class="contacts__text">Работаем по всей Россиию</p>
+								<ul class="contacts__items">
+									<li class="contacts__item">
+										<p class="contacts__adress">Адрес</p>
+										<p class="contacts__city">город Москва</p>
+									</li>
+									<li class="contacts__item">
+										<p class="contacts__tel">Телефон</p>
+										<a href="#" class="contacts__phone">8 (952) 52-333-77</a>
+									</li>
+									<li class="contacts__item">
+										<p class="contacts__question">
+											Есть вопрос?<span>Задайте его специалисту!</span>
+										</p>
+										<button type="button" class="contacts__btn btn-bg">
+											Задать вопрос
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__map">
+						<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A70ac09f7688d7e0f9ad4cdab2adc63a1a2f410685aafb7cb38a2bf203531b7ec&width=100%25&height=320&lang=ru_RU&scroll=true"></script>
+					</div>
+				</div>
+			</section>
+
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -608,17 +643,35 @@
 		</footer>
 
 	</div>
-	<!-- 
-<div id="popapus" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="popapus" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__body">
+					<div class="popup__image"><img src="img/doctors/doctor2.jpg" alt="Фото специалиста"></div>
+				</div>
+				<div class="popup__textual">
+					<h2 class="popup__title">Запишитесь на прием к доктору <span>Сергею Евдокимову</span></h2>
+					<p class="popup__text">Заполните форму и наши специалисты свяжутся с Вами по телефону в ближайшее время и уточнят все детали</p>
+					<form class="popup__form">
+						<input type="tel" class="popup__input" placeholder="Номер телефона" required>
+						<div class="consultation__select select-consultation">
+							<label class="select-consultation__label"></label>
+							<div class="select-consultation__selectWrapper">
+								<div id="select__specialists"></div>
+							</div>
+						</div>
+						<textarea name="text" class="popup__texarea" placeholder="Здесь напишите желаемую дату и время приема и ваш комментарий"></textarea>
+						<button class="popup__btn button btn-bg" type="submit">Задать вопрос доктору</button>
+						<p class="popup__policy">
+							нажимая кнопку Записаться на прием вы соглашаетесь с нашей
+							<a href="#">политикой конфиденциальности</a>
+						</p>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
 	<script src="js/app.min.js"></script>
 </body>
 
