@@ -21,8 +21,8 @@
 						<img src="img/icons/logo.svg" alt="Логотип сайта" />
 					</a>
 					<div class="header__city">
-						<div class="header__city_location">г. Москва</div>
-						<div class="header__city_addresses">Адреса клиник</div>
+						<span class="header__city_location">г. Москва</span>
+						<span class="header__city_addresses">Адреса клиник</span>
 					</div>
 					<div data-da=".header__bottom,991.98" class="header__socials">
 						<a href="#" class="header__social">
@@ -41,11 +41,11 @@
 							<img src="img/icons/icons-social-yt.svg" alt="Ютюб" />
 						</a>
 					</div>
-					<button data-popup="#popapus" data-da=".header__top,767.98" class="header__btn btn-bg">
+					<button data-popup="#popup1" data-da=".header__top,767.98" class="header__btn btn-bg">
 						ЗАПИСАТЬСЯ НА ПРИЕМ
 					</button>
-					<div data-da=".header__bottom,991.98" class="header__phone">
-						<a href="#" class="header__tel">
+					<div data-da=".header__top,997.98" class="header__phone">
+						<a href="tel:88008053432" class="header__tel">
 							<span>
 								<img src="img/icons/icons-tel.svg" alt="Телефон" />
 							</span>
@@ -139,7 +139,7 @@
 						</ul>
 						<div class="banner__offers">
 							<div class="banner__reception">
-								<button class="banner__btn">
+								<button data-popup="#popup2" class="banner__btn">
 									ЗАПИСАТЬСЯ НА ПРИЕМ<span><img src="img/icons/icons-btn.svg" alt="Иконка" /></span>
 								</button>
 							</div>
@@ -513,67 +513,123 @@
 				</div>
 			</section>
 
-			<section class="reviews">
-				<div class="reviews__container">
-					<h2 class="reviews__title title">Отзывы клиентов</h2>
-					<div class="reviews__body">
-						<div class="reviews__commentators">
-							<article class="reviews__review">
-								<p class="reviews__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna
-									aliquyam erat, sed diam voluptua. At vero eos et accusam et
-									justo duo dolores
-								</p>
-								<a href="#" class="reviews__commentator commentator-review">
-									<div class="commentator-review__img">
-										<img src="img/review.jpg" alt="Фото коментатора" />
-									</div>
-									<div class="commentator-review__textual">
-										<h3 class="commentator-review__name">Rob Hope</h3>
-										<p class="commentator-review__site">Onepagelove.com</p>
-									</div>
-								</a>
-							</article>
-							<article class="reviews__review">
-								<p class="reviews__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna
-									aliquyam erat, sed diam voluptua. At vero eos et accusam et
-									justo duo dolores
-								</p>
-								<a href="#" class="reviews__commentator commentator-review">
-									<div class="commentator-review__img">
-										<img src="img/review.jpg" alt="Фото коментатора" />
-									</div>
-									<div class="commentator-review__textual">
-										<h3 class="commentator-review__name">Rob Hope</h3>
-										<p class="commentator-review__site">Onepagelove.com</p>
-									</div>
-								</a>
-							</article>
-							<article class="reviews__review">
-								<p class="reviews__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna
-									aliquyam erat, sed diam voluptua. At vero eos et accusam et
-									justo duo dolores
-								</p>
-								<a href="#" class="reviews__commentator commentator-review">
-									<div class="commentator-review__img">
-										<img src="img/review.jpg" alt="Фото коментатора" />
-									</div>
-									<div class="commentator-review__textual">
-										<h3 class="commentator-review__name">Rob Hope</h3>
-										<p class="commentator-review__site">Onepagelove.com</p>
-									</div>
-								</a>
-							</article>
-						</div>
-						<button class="reviews__more btn-more">Показать еще</button>
-					</div>
-				</div>
-			</section>
+			<!--
+
+        <section class="reviews">
+          <div class="reviews__container">
+            <h2 class="reviews__title title">Отзывы клиентов</h2>
+            <div class="reviews__body">
+              <div class="reviews__columms">
+                <div class="reviews__videos">
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__commentators">
+                <article class="reviews__review">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                  <a href="#" class="reviews__commentator commentator-review">
+                    <div class="commentator-review__img">
+                      <img src="img/review.jpg" alt="Фото коментатора" />
+                    </div>
+                    <div class="commentator-review__textual">
+                      <h3 class="commentator-review__name">Rob Hope</h3>
+                      <p class="commentator-review__site">Onepagelove.com</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="reviews__review">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                  <a href="#" class="reviews__commentator commentator-review">
+                    <div class="commentator-review__img">
+                      <img src="img/review.jpg" alt="Фото коментатора" />
+                    </div>
+                    <div class="commentator-review__textual">
+                      <h3 class="commentator-review__name">Rob Hope</h3>
+                      <p class="commentator-review__site">Onepagelove.com</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="reviews__review">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                  <a href="#" class="reviews__commentator commentator-review">
+                    <div class="commentator-review__img">
+                      <img src="img/review.jpg" alt="Фото коментатора" />
+                    </div>
+                    <div class="commentator-review__textual">
+                      <h3 class="commentator-review__name">Rob Hope</h3>
+                      <p class="commentator-review__site">Onepagelove.com</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <button class="reviews__more btn-more">Показать еще</button>
+            </div>
+          </div>
+        </section>
+
+      -->
 
 			<section class="questions">
 				<div class="questions__container">
@@ -681,8 +737,6 @@
 					</div>
 				</div>
 			</section>
-
-
 			<section class="articles">
 				<div class="articles__container">
 					<h2 class="articles__title title">Новые статьи</h2>
@@ -742,7 +796,6 @@
 				</div>
 			</section>
 
-
 			<section class="pre-questions">
 				<div class="pre-questions__circles"><span></span></div>
 				<div class="pre-questions__container pre-questions__container_narrow">
@@ -770,7 +823,6 @@
 				</div>
 			</section>
 
-
 			<section class="contacts">
 				<div class="contacts__container">
 					<div class="contacts__body">
@@ -785,7 +837,7 @@
 									</li>
 									<li class="contacts__item">
 										<p class="contacts__tel">Телефон</p>
-										<a href="#" class="contacts__phone">8 (952) 52-333-77</a>
+										<a href="tel:89525233377" class="contacts__phone">8 (952) 52-333-77</a>
 									</li>
 									<li class="contacts__item">
 										<p class="contacts__question">
@@ -864,22 +916,20 @@
 		</footer>
 
 	</div>
-	<div id="popapus" aria-hidden="true" class="popup">
+	<div id="popup1" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
-				<div class="popup__body">
-					<div class="popup__image"><img src="img/doctors/doctor2.jpg" alt="Фото специалиста"></div>
-				</div>
+				<div class="popup__image"><img src="img/doctors/doctor2.jpg" alt="Фото специалиста"></div>
 				<div class="popup__textual">
 					<h2 class="popup__title">Запишитесь на прием к доктору <span>Сергею Евдокимову</span></h2>
 					<p class="popup__text">Заполните форму и наши специалисты свяжутся с Вами по телефону в ближайшее время и уточнят все детали</p>
 					<form class="popup__form">
 						<input type="tel" class="popup__input" placeholder="Номер телефона" required>
-						<div class="consultation__select select-consultation">
-							<label class="select-consultation__label"></label>
-							<div class="select-consultation__selectWrapper">
-								<div id="select__specialists"></div>
+						<div class="popup__select select-popup">
+							<label class="select-popup__label"></label>
+							<div class="select-popup__selectWrapper">
+								<div id="select__themeQuestions"></div>
 							</div>
 						</div>
 						<textarea name="text" class="popup__texarea" placeholder="Здесь напишите желаемую дату и время приема и ваш комментарий"></textarea>
@@ -889,6 +939,23 @@
 							<a href="#">политикой конфиденциальности</a>
 						</p>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__image"><img src="img/doctors/doctor2.jpg" alt="Фото специалиста"></div>
+				<div class="popup__textual">
+					<h2 class="popup__title">Хотите больше узнать о нашем методе? <span>Подпишитесь на нас в Соц сетях</span></h2>
+					<div class="popup__socials">
+						<button type="button" class="popup__social popup__social_tg"><img src="img/popup-tg.svg" alt="Телеграм"><span>Подписаться</span></button>
+						<button type="button" class="popup__social popup__social_yt"><img src="img/popup-youtube.svg" alt="Ютюб"><span>Подписаться</span></button>
+						<button type="button" class="popup__social popup__social_vk"><img src="img/popup-vk.svg" alt="Вконтакте"><span>Подписаться</span></button>
+					</div>
 				</div>
 			</div>
 		</div>
