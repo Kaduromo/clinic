@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header data-sticky class="header">
+		<header data-scrollShow="500" class="header">
 			<div class="header__container">
 				<div class="header__top">
 					<a href="#" class="header__logo">
@@ -26,19 +26,19 @@
 					</div>
 					<div data-da=".header__bottom,991.98" class="header__socials">
 						<a href="#" class="header__social">
-							<img src="img/icons/icons-social-tg.svg" alt="Телеграм" />
+							<img src="img/social/icons-social-tg.svg" alt="Телеграм" />
 						</a>
 						<a href="#" class="header__social">
-							<img src="img/icons/icons-social-ok.svg" alt="Одноклассники" />
+							<img src="img/social/icons-social-ok.svg" alt="Одноклассники" />
 						</a>
 						<a href="#" class="header__social">
-							<img src="img/icons/icons-social-vk.svg" alt="Вконтакте" />
+							<img src="img/social/icons-social-vk.svg" alt="Вконтакте" />
 						</a>
 						<a href="#" class="header__social">
-							<img src="img/icons/icons-social-dz.svg" alt="Дзен" />
+							<img src="img/social/icons-social-dz.svg" alt="Дзен" />
 						</a>
 						<a href="#" class="header__social">
-							<img src="img/icons/icons-social-yt.svg" alt="Ютюб" />
+							<img src="img/social/icons-social-yt.svg" alt="Ютюб" />
 						</a>
 					</div>
 					<button data-popup="#popup1" data-da=".header__top,767.98" class="header__btn btn-bg">
@@ -513,120 +513,123 @@
 				</div>
 			</section>
 
+			<!--
 
-			<section class="reviews">
-				<div class="reviews__container">
-					<h2 class="reviews__title title">Отзывы клиентов</h2>
-					<div class="reviews__body">
-						<div class="reviews__columms">
-							<div class="reviews__videos">
-								<div class="preview__content">
-									<button class="preview__play">
-										<span>
-											<img src="img/icons/icons-play.svg" alt="Play" />
-										</span>
-									</button>
-									<video class="preview__video" src="files/video.mp4"></video>
-								</div>
-								<div class="preview__content">
-									<button class="preview__play">
-										<span>
-											<img src="img/icons/icons-play.svg" alt="Play" />
-										</span>
-									</button>
-									<video class="preview__video" src="files/video.mp4"></video>
-								</div>
-								<div class="preview__content">
-									<button class="preview__play">
-										<span>
-											<img src="img/icons/icons-play.svg" alt="Play" />
-										</span>
-									</button>
-									<video class="preview__video" src="files/video.mp4"></video>
-								</div>
-								<div class="preview__content">
-									<button class="preview__play">
-										<span>
-											<img src="img/icons/icons-play.svg" alt="Play" />
-										</span>
-									</button>
-									<video class="preview__video" src="files/video.mp4"></video>
-								</div>
-								<div class="preview__content">
-									<button class="preview__play">
-										<span>
-											<img src="img/icons/icons-play.svg" alt="Play" />
-										</span>
-									</button>
-									<video class="preview__video" src="files/video.mp4"></video>
-								</div>
-								<div class="preview__content">
-									<button class="preview__play">
-										<span>
-											<img src="img/icons/icons-play.svg" alt="Play" />
-										</span>
-									</button>
-									<video class="preview__video" src="files/video.mp4"></video>
-								</div>
-							</div>
-						</div>
-						<div class="reviews__commentators">
-							<article class="reviews__review">
-								<p class="reviews__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna
-									aliquyam erat, sed diam voluptua. At vero eos et accusam et
-									justo duo dolores
-								</p>
-								<a href="#" class="reviews__commentator commentator-review">
-									<div class="commentator-review__img">
-										<img src="img/review.jpg" alt="Фото коментатора" />
-									</div>
-									<div class="commentator-review__textual">
-										<h3 class="commentator-review__name">Rob Hope</h3>
-										<p class="commentator-review__site">Onepagelove.com</p>
-									</div>
-								</a>
-							</article>
-							<article class="reviews__review">
-								<p class="reviews__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna
-									aliquyam erat, sed diam voluptua. At vero eos et accusam et
-									justo duo dolores
-								</p>
-								<a href="#" class="reviews__commentator commentator-review">
-									<div class="commentator-review__img">
-										<img src="img/review.jpg" alt="Фото коментатора" />
-									</div>
-									<div class="commentator-review__textual">
-										<h3 class="commentator-review__name">Rob Hope</h3>
-										<p class="commentator-review__site">Onepagelove.com</p>
-									</div>
-								</a>
-							</article>
-							<article class="reviews__review">
-								<p class="reviews__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt ut labore et dolore magna
-									aliquyam erat, sed diam voluptua. At vero eos et accusam et
-									justo duo dolores
-								</p>
-								<a href="#" class="reviews__commentator commentator-review">
-									<div class="commentator-review__img">
-										<img src="img/review.jpg" alt="Фото коментатора" />
-									</div>
-									<div class="commentator-review__textual">
-										<h3 class="commentator-review__name">Rob Hope</h3>
-										<p class="commentator-review__site">Onepagelove.com</p>
-									</div>
-								</a>
-							</article>
-						</div>
-						<button class="reviews__more btn-more">Показать еще</button>
-					</div>
-				</div>
-			</section>
+        <section class="reviews">
+          <div class="reviews__container">
+            <h2 class="reviews__title title">Отзывы клиентов</h2>
+            <div class="reviews__body">
+              <div class="reviews__columms">
+                <div class="reviews__videos">
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                  <div class="preview__content">
+                    <button class="preview__play">
+                      <span>
+                        <img src="img/icons/icons-play.svg" alt="Play" />
+                      </span>
+                    </button>
+                    <video class="preview__video" src="files/video.mp4"></video>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__commentators">
+                <article class="reviews__review">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                  <a href="#" class="reviews__commentator commentator-review">
+                    <div class="commentator-review__img">
+                      <img src="img/review.jpg" alt="Фото коментатора" />
+                    </div>
+                    <div class="commentator-review__textual">
+                      <h3 class="commentator-review__name">Rob Hope</h3>
+                      <p class="commentator-review__site">Onepagelove.com</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="reviews__review">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                  <a href="#" class="reviews__commentator commentator-review">
+                    <div class="commentator-review__img">
+                      <img src="img/review.jpg" alt="Фото коментатора" />
+                    </div>
+                    <div class="commentator-review__textual">
+                      <h3 class="commentator-review__name">Rob Hope</h3>
+                      <p class="commentator-review__site">Onepagelove.com</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="reviews__review">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                  <a href="#" class="reviews__commentator commentator-review">
+                    <div class="commentator-review__img">
+                      <img src="img/review.jpg" alt="Фото коментатора" />
+                    </div>
+                    <div class="commentator-review__textual">
+                      <h3 class="commentator-review__name">Rob Hope</h3>
+                      <p class="commentator-review__site">Onepagelove.com</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <button class="reviews__more btn-more">Показать еще</button>
+            </div>
+          </div>
+        </section>
+        
+      -->
 
 
 			<section class="questions">
@@ -896,9 +899,11 @@
 								<a href="№" class="footer__link">Follow Us</a>
 							</li>
 							<li class="footer__list footer__list_social">
-								<a class="footer__social" href="#"><img src="img/social/fb.svg" alt="Facebook" /></a>
-								<a class="footer__social" href="#"><img src="img/social/tw.svg" alt="Twitter" /></a>
-								<a class="footer__social" href="#"><img src="img/social/inst.svg" alt="Instagram" /></a>
+								<a class="footer__social" href="#"><img src="img/social/dark-tg.svg" alt="Телеграм" /></a>
+								<a class="footer__social" href="#"><img src="img/social/dark-ok.svg" alt="Одноклассники" /></a>
+								<a class="footer__social" href="#"><img src="img/social/dark-vk.svg" alt="Вконтакте" /></a>
+								<a class="footer__social" href="#"><img src="img/social/dark-youtube.svg" alt="Ютюб" /></a>
+								<a class="footer__social" href="#"><img src="img/social/dark-dz.svg" alt="Дзен" /></a>
 							</li>
 						</ul>
 					</div>
@@ -950,9 +955,9 @@
 				<div class="popup__textual">
 					<h2 class="popup__title">Хотите больше узнать о нашем методе? <span>Подпишитесь на нас в Соц сетях</span></h2>
 					<div class="popup__socials">
-						<button type="button" class="popup__social popup__social_tg"><img src="img/popup-tg.svg" alt="Телеграм"><span>Подписаться</span></button>
-						<button type="button" class="popup__social popup__social_yt"><img src="img/popup-youtube.svg" alt="Ютюб"><span>Подписаться</span></button>
-						<button type="button" class="popup__social popup__social_vk"><img src="img/popup-vk.svg" alt="Вконтакте"><span>Подписаться</span></button>
+						<button type="button" class="popup__social popup__social_tg"><img src="img/social/popup-tg.svg" alt="Телеграм"><span>Подписаться</span></button>
+						<button type="button" class="popup__social popup__social_yt"><img src="img/social/popup-youtube.svg" alt="Ютюб"><span>Подписаться</span></button>
+						<button type="button" class="popup__social popup__social_vk"><img src="img/social/popup-vk.svg" alt="Вконтакте"><span>Подписаться</span></button>
 					</div>
 				</div>
 			</div>
