@@ -22,7 +22,7 @@
 					</a>
 					<div class="header__city">
 						<span class="header__city_location">г. Москва</span>
-						<span class="header__city_addresses">Адреса клиник</span>
+						<span data-popup="#popup3" class="header__city_addresses">Адреса клиник</span>
 					</div>
 					<div data-da=".header__bottom,991.98" class="header__socials">
 						<a href="#" class="header__social">
@@ -603,12 +603,19 @@
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
-				<div class="popup__image"><img src="img/doctors/doctor2.jpg" alt="Фото специалиста"></div>
+				<div class="popup__image">
+					<img src="img/doctors/doctor2.jpg" alt="Фото специалиста" />
+				</div>
 				<div class="popup__textual">
-					<h2 class="popup__title">Запишитесь на прием к доктору <span>Сергею Евдокимову</span></h2>
-					<p class="popup__text">Заполните форму и наши специалисты свяжутся с Вами по телефону в ближайшее время и уточнят все детали</p>
+					<h2 class="popup__title">
+						Запишитесь на прием к доктору <span>Сергею Евдокимову</span>
+					</h2>
+					<p class="popup__text">
+						Заполните форму и наши специалисты свяжутся с Вами по телефону в
+						ближайшее время и уточнят все детали
+					</p>
 					<form class="popup__form">
-						<input type="tel" class="popup__input" placeholder="Номер телефона" required>
+						<input type="tel" class="popup__input" placeholder="Номер телефона" required />
 						<div class="popup__select select-popup">
 							<label class="select-popup__label"></label>
 							<div class="select-popup__selectWrapper">
@@ -616,7 +623,9 @@
 							</div>
 						</div>
 						<textarea name="text" class="popup__texarea" placeholder="Здесь напишите желаемую дату и время приема и ваш комментарий"></textarea>
-						<button class="popup__btn button btn-bg" type="submit">Задать вопрос доктору</button>
+						<button class="popup__btn button btn-bg" type="submit">
+							Задать вопрос доктору
+						</button>
 						<p class="popup__policy">
 							нажимая кнопку Записаться на прием вы соглашаетесь с нашей
 							<a href="#">политикой конфиденциальности</a>
@@ -631,13 +640,61 @@
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
-				<div class="popup__image"><img src="img/doctors/doctor2.jpg" alt="Фото специалиста"></div>
+				<div class="popup__image">
+					<img src="img/doctors/doctor2.jpg" alt="Фото специалиста" />
+				</div>
 				<div class="popup__textual">
-					<h2 class="popup__title">Хотите больше узнать о нашем методе? <span>Подпишитесь на нас в Соц сетях</span></h2>
+					<h2 class="popup__title">
+						Хотите больше узнать о нашем методе?
+						<span>Подпишитесь на нас в Соц сетях</span>
+					</h2>
 					<div class="popup__socials">
-						<button type="button" class="popup__social popup__social_tg"><img src="img/social/popup-tg.svg" alt="Телеграм"><span>Подписаться</span></button>
-						<button type="button" class="popup__social popup__social_yt"><img src="img/social/popup-youtube.svg" alt="Ютюб"><span>Подписаться</span></button>
-						<button type="button" class="popup__social popup__social_vk"><img src="img/social/popup-vk.svg" alt="Вконтакте"><span>Подписаться</span></button>
+						<button type="button" class="popup__social popup__social_tg">
+							<img src="img/social/popup-tg.svg" alt="Телеграм" /><span>Подписаться</span>
+						</button>
+						<button type="button" class="popup__social popup__social_yt">
+							<img src="img/social/popup-youtube.svg" alt="Ютюб" /><span>Подписаться</span>
+						</button>
+						<button type="button" class="popup__social popup__social_vk">
+							<img src="img/social/popup-vk.svg" alt="Вконтакте" /><span>Подписаться</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_city">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__textual">
+					<h2 class="popup__title">Ваш город <span>Санкт-Петербург?</span></h2>
+					<div class="popup__btns">
+						<button class="popup__btn btn-more">Сменить город</button>
+						<button class="popup__btn btn-bg">Всё верно</button>
+					</div>
+					<div class="popup__cities">
+						<div class="popup__city">
+							<p class="popup__subtitle">Россия:</p>
+							<!-- <p class="popup__text">Москва</p> -->
+							<div class="popup__select popup__select_city select-popup">
+								<label class="select-popup__label"></label>
+								<div class="select-popup__selectWrapper">
+									<div id="select-city-ru"></div>
+								</div>
+							</div>
+						</div>
+						<div class="popup__city">
+							<p class="popup__subtitle">Казахстан:</p>
+							<!-- <p class="popup__text">Астана</p> -->
+							<div class="popup__select popup__select_city select-popup">
+								<label class="select-popup__label"></label>
+								<div class="select-popup__selectWrapper">
+									<div id="select-city-kz"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
